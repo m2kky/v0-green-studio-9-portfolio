@@ -1,0 +1,336 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated color palette for Green Studio 9 brand */
+  --background: #ffffff;
+  --foreground: #65706f;
+  --card: #f7f7f7;
+  --card-foreground: #339b57;
+  --popover: #ffffff;
+  --popover-foreground: #65706f;
+  --primary: #339b57;
+  --primary-foreground: #ffffff;
+  --secondary: #cd9a3c;
+  --secondary-foreground: #ffffff;
+  --muted: #f7f7f7;
+  --muted-foreground: #65706f;
+  --accent: #cd9a3c;
+  --accent-foreground: #ffffff;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #e3e3e3;
+  --input: #f7f7f7;
+  --ring: rgba(51, 155, 87, 0.5);
+  --chart-1: #339b57;
+  --chart-2: #cd9a3c;
+  --chart-3: #65706f;
+  --chart-4: #f7f7f7;
+  --chart-5: #dc2626;
+  --radius: 0.5rem;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #65706f;
+  --sidebar-primary: #339b57;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #cd9a3c;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #e3e3e3;
+  --sidebar-ring: rgba(51, 155, 87, 0.5);
+  --font-inter: "Inter", sans-serif;
+  --font-poppins: "Poppins", monospace;
+}
+
+.dark {
+  --background: #1a1a1a;
+  --foreground: #ffffff;
+  --card: #2a2a2a;
+  --card-foreground: #339b57;
+  --popover: #1a1a1a;
+  --popover-foreground: #ffffff;
+  --primary: #339b57;
+  --primary-foreground: #ffffff;
+  --secondary: #cd9a3c;
+  --secondary-foreground: #ffffff;
+  --muted: #2a2a2a;
+  --muted-foreground: #65706f;
+  --accent: #cd9a3c;
+  --accent-foreground: #ffffff;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --border: #3a3a3a;
+  --input: #2a2a2a;
+  --ring: rgba(51, 155, 87, 0.5);
+  --chart-1: #339b57;
+  --chart-2: #cd9a3c;
+  --chart-3: #65706f;
+  --chart-4: #2a2a2a;
+  --chart-5: #dc2626;
+  --sidebar: #1a1a1a;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #339b57;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #cd9a3c;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #3a3a3a;
+  --sidebar-ring: rgba(51, 155, 87, 0.5);
+  --font-inter: "Inter", sans-serif;
+  --font-poppins: "Poppins", monospace;
+}
+
+@theme inline {
+  /* Updated font variables to use Inter and Poppins instead of Geist */
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-poppins);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Added custom animations for 3D elements and smooth scrolling */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Added more custom animations for enhanced user experience */
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+@keyframes heartbeat {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-wiggle {
+  animation: wiggle 1s ease-in-out infinite;
+}
+
+.animate-heartbeat {
+  animation: heartbeat 2s ease-in-out infinite;
+}
+
+.animate-slide-in-left {
+  animation: slideInFromLeft 0.8s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInFromRight 0.8s ease-out forwards;
+}
+
+/* Smooth scrolling for the entire page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--muted);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
+
+/* Added glassy effects and reveal animations */
+.glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass-effect {
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-navbar {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(30px);
+  border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.dark .glass-navbar {
+  background: rgba(0, 0, 0, 0.3);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.nav-icon-active {
+  background: rgba(51, 155, 87, 0.2);
+  transform: translateX(8px);
+  box-shadow: 0 4px 20px rgba(51, 155, 87, 0.3);
+}
+
+.nav-icon-hover {
+  background: rgba(51, 155, 87, 0.1);
+  transform: translateX(4px);
+}
+
+@keyframes revealUp {
+  from {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes revealLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes revealRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.reveal-up {
+  animation: revealUp 0.8s ease-out forwards;
+}
+
+.reveal-left {
+  animation: revealLeft 0.8s ease-out forwards;
+}
+
+.reveal-right {
+  animation: revealRight 0.8s ease-out forwards;
+}
+
+.section-hidden {
+  opacity: 0;
+  transform: translateY(60px);
+}
+
+/* Enhanced hover effects for better interactivity */
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(51, 155, 87, 0.4);
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+}
