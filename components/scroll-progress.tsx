@@ -1,11 +1,13 @@
 "use client"
 
-import { useEffect, useState } from "react"
+import React, { useEffect, useState } from "react"
 
 export function ScrollProgress() {
   const [scrollProgress, setScrollProgress] = useState(0)
 
   useEffect(() => {
+    if (typeof window === 'undefined') return
+    
     const updateScrollProgress = () => {
       const currentProgress = window.scrollY
       const scrollHeight = document.body.scrollHeight - window.innerHeight

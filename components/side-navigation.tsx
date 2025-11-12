@@ -12,6 +12,7 @@ import {
   MenuIcon,
   XIcon,
 } from "@/components/simple-icons"
+import { ThemeDropdown } from "@/components/theme-dropdown"
 
 const navItems = [
   { icon: HomeIcon, label: "Home", href: "#home" },
@@ -93,6 +94,8 @@ export function SideNavigation() {
               </Button>
             )
           })}
+          
+          <ThemeDropdown />
         </div>
       </nav>
 

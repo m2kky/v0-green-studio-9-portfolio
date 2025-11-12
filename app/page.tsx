@@ -10,12 +10,13 @@ import { ContactSection } from "@/components/contact-section"
 import { WhatsAppButton } from "@/components/whatsapp-button"
 import { ScrollProgress } from "@/components/scroll-progress"
 import { RevealAnimation } from "@/components/reveal-animation"
+import { BackToTop } from "@/components/back-to-top"
 
 export default function HomePage() {
   return (
     <main className="relative">
       <ScrollProgress />
-      <div className="fixed inset-0 bg-gradient-to-br from-green-50 via-white to-green-100 -z-10" />
+      <div className="fixed inset-0 bg-gradient-to-br from-green-50 via-white to-green-100 dark:from-slate-900 dark:via-slate-800 dark:to-green-900 -z-10" />
       <SideNavigation />
       <div className="ml-0 md:ml-12 relative">
         <div className="absolute inset-0 glass-effect opacity-30 pointer-events-none" />
@@ -37,6 +38,7 @@ export default function HomePage() {
         </RevealAnimation>
       </div>
       <WhatsAppButton />
+      <BackToTop />
     </main>
   )
 }

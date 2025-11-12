@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useRef, type ReactNode } from "react"
+import React, { useEffect, useRef, type ReactNode } from "react"
 
 interface RevealAnimationProps {
   children: ReactNode
@@ -13,6 +13,8 @@ export function RevealAnimation({ children, direction = "up", delay = 0, classNa
   const elementRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
+    if (typeof window === 'undefined') return
+    
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {

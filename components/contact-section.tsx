@@ -97,7 +97,8 @@ export function ContactSection() {
             </p>
             <Button
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground hover:scale-105 transition-all duration-300"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground hover:scale-105 transition-all duration-300 cursor-pointer"
+              onClick={() => window.open('https://wa.me/201044200277', '_blank')}
             >
               Start Your Project
             </Button>

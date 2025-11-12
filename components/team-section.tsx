@@ -3,35 +3,66 @@
 import { useEffect, useRef } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { UserLargeIcon, CrownIcon, ZapIcon } from "@/components/simple-icons"
+import Image from "next/image"
 
 const teamMembers = [
   {
-    name: "DR. MOHAMED HARNY",
-    role: "Founder",
-    icon: CrownIcon,
-    color: "text-accent",
-  },
-  {
-    name: "ABDULLAH SAAD",
-    role: "Co-Founder & Marketing Director",
-    icon: UserLargeIcon,
-    color: "text-primary",
-  },
-  {
-    name: "MUHAMMED MEKKY",
+    name: "Mohamed Mekky",
     role: "Co-Founder & AI Specialist",
-    icon: ZapIcon,
-    color: "text-primary",
+    image: "/team/Mekey .jpeg",
+    imageHeight: 150,
+  },
+  {
+    name: "Nour Ibrahem",
+    role: "Front-end & AI",
+    image: "/team/Nour.jpeg",
+    imageHeight: 150,
+  },
+  {
+    name: "Assem Darwish",
+    role: "Graphic designer",
+    image: "/team/Assem Darwish.jpeg",
+    imageHeight: 150,
+  },
+  {
+    name: "Magdy Shaban",
+    role: "Social media specialist",
+    image: "/team/megz.jpeg",
+    imageHeight: 150,
+  },
+  {
+    name: "Alaa Sayed",
+    role: "Media production leader",
+    image: "/team/alaa (2).jpg",
+    imageHeight: 150,
+  },
+  {
+    name: "Sama Muhammad",
+    role: "Content creator",
+    image: "/team/Sama .jpeg",
+    imageHeight: 150,
+  },
+  {
+    name: "Aya Salem",
+    role: "video editor ",
+    image: "/team/aya.jpeg",
+    imageHeight: 219,
+  },
+  {
+    name: "Sondos Sayed",
+    role: "Video content creation",
+    image: "/team/Sondos.jpeg",
+    imageHeight: 219,
+  },
+  {
+    name: "Tasneem Thabet",
+    role: "Photographer & Video Editor",
+    image: "/team/Tesneam.jpeg",
+    imageHeight: 219,
   },
 ]
 
-const teamRoles = [
-  "Social Media Specialists (Fatma & Salma)",
-  "Video Content Creators (Alaa, Sondos, Sama, Mariam)",
-  "Video Editors (Mahmoud, Ahmed, Aya)",
-  "Media Buyers & Researchers (Poula)",
-]
+
 
 export function TeamSection() {
   const sectionRef = useRef<HTMLElement>(null)
@@ -73,52 +104,38 @@ export function TeamSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          {teamMembers.map((member, index) => {
-            const IconComponent = member.icon
-            return (
-              <Card
-                key={index}
-                className="animate-card opacity-0 text-center glass-effect border-primary/10 hover:border-primary/30 hover:shadow-xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 group"
-              >
-                <CardContent className="p-8">
-                  <div className="mb-6">
-                    <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4 border border-primary/20 group-hover:bg-primary/20 group-hover:scale-110 group-hover:rotate-12 transition-all duration-300">
-                      <div className="group-hover:animate-bounce">
-                        <IconComponent />
-                      </div>
-                    </div>
-                    <h3 className="text-xl font-bold mb-2 text-foreground group-hover:text-primary transition-colors duration-300">
-                      {member.name}
-                    </h3>
-                    <Badge
-                      variant="secondary"
-                      className="text-xs px-2 py-1 bg-primary/90 text-white border-primary/90 hover:bg-primary inline-block max-w-full group-hover:scale-105 transition-all duration-300"
-                    >
-                      {member.role}
-                    </Badge>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {teamMembers.map((member, index) => (
+            <Card
+              key={index}
+              className="animate-card opacity-0 text-center glass-effect border-primary/10 hover:border-primary/30 hover:shadow-xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 group"
+            >
+              <CardContent className="p-8">
+                <div className="mb-6">
+                  <div className="w-[150px] h-[150px] mx-auto mb-4 rounded-full overflow-hidden border-2 border-primary/20">
+                    <Image
+                      src={member.image}
+                      alt={member.name}
+                      width={150}
+                      height={member.imageHeight}
+                      className={`object-cover object-center ${member.imageHeight === 150 ? 'w-full h-full' : ''}`}
+                      quality={100}
+                      priority
+                    />
                   </div>
-                </CardContent>
-              </Card>
-            )
-          })}
-        </div>
-
-        <div className="bg-card/50 rounded-lg p-8 border border-primary/10 hover:bg-card/70 hover:border-primary/20 transition-all duration-300">
-          <h3 className="text-2xl font-bold text-center mb-8 text-foreground animate-pulse">Our Extended Team</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {teamRoles.map((role, index) => (
-              <div
-                key={index}
-                className="animate-card opacity-0 flex items-center space-x-3 hover:scale-105 transition-all duration-300 group"
-              >
-                <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0 group-hover:animate-pulse group-hover:scale-150 transition-all duration-300" />
-                <p className="text-muted-foreground group-hover:text-foreground transition-colors duration-300">
-                  {role}
-                </p>
-              </div>
-            ))}
-          </div>
+                  <h3 className="text-xl font-bold mb-2 text-foreground group-hover:text-primary transition-colors duration-300">
+                    {member.name}
+                  </h3>
+                  <Badge
+                    variant="secondary"
+                    className="text-xs px-2 py-1 bg-green-600 text-white hover:bg-green-700 inline-block max-w-full group-hover:scale-105 transition-all duration-300"
+                  >
+                    {member.role}
+                  </Badge>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
     </section>

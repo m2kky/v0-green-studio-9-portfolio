@@ -24,7 +24,8 @@ export function HeroSection() {
         <div className="flex justify-center">
           <Button
             size="lg"
-            className="bg-primary hover:bg-primary/90 text-white px-8 py-3 border-0 transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="bg-primary hover:bg-primary/90 text-white px-8 py-3 border-0 transition-all duration-300 shadow-lg hover:shadow-xl cursor-pointer"
+            onClick={() => document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' })}
           >
             Get Started
             <ArrowRight className="ml-2 h-4 w-4" />
@@ -37,7 +38,7 @@ export function HeroSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16 text-center">
           <div className="space-y-2 glass-effect rounded-xl p-6 transition-all duration-300">
-            <h3 className="text-3xl font-bold text-primary">20+</h3>
+            <h3 className="text-3xl font-bold text-primary">5+</h3>
             <p className="text-muted-foreground">Team Members</p>
           </div>
           <div className="space-y-2 glass-effect rounded-xl p-6 transition-all duration-300">

@@ -3,40 +3,52 @@
 import { useEffect, useRef } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { PaletteIcon, SearchIcon, BotIcon, CameraIcon, VideoIcon, TrendingUpIcon } from "@/components/simple-icons"
+import { Camera, Search, Bot, Monitor, ShoppingCart, Users } from "lucide-react"
 
 const services = [
   {
-    icon: PaletteIcon,
-    title: "Branding & Strategic Consulting",
+    icon: Camera,
+    title: "Media Production",
     description:
-      "Complete brand identity development and strategic marketing consultation to position your business for success.",
+      `From cinematic videos to scroll-stopping
+  visuals — we produce content that doesn’t
+  just look good, it sells.
+  Photography | Videography | Motion
+  Graphics | Creative Direction`,
   },
   {
-    icon: SearchIcon,
-    title: "Market Research",
+    icon: Search,
+    title: "Media Buying",
     description:
-      "In-depth market analysis and consumer insights to inform your business decisions and marketing strategies.",
+        `We run data-driven campaigns across
+  Meta, Google, and TikTok.s
+  Every ad is tested, optimized, and refined
+  to deliver maximum ROI — not empty
+  impressions.`,
   },
   {
-    icon: BotIcon,
-    title: "AI & Automation Solutions",
-    description: "Cutting-edge AI tools and automation systems to streamline your operations and improve efficiency.",
+    icon: Bot,
+    title: "Automation",
+    description: `We connect tools, build workflows, and
+  automate systems so your brand works
+  smarter, not harder.
+  Think Zapier, CRMs, custom bots — we
+  make everything talk to everything.`,
   },
   {
-    icon: CameraIcon,
-    title: "Professional Photography",
-    description: "High-quality product and brand photography that captures your vision and engages your audience.",
+    icon: Monitor,
+    title: "Web Development & Design",
+    description: `We create websites that look stunning and convert visitors into buyers. Fast, modern, and optimized for performance.`,
   },
   {
-    icon: VideoIcon,
-    title: "Content Production",
-    description: "Professional video content, reels, and podcast production to amplify your brand message.",
+    icon: ShoppingCart,
+    title: "E-commerce Stores",
+    description: ` We build and scale online stores for brands ready to grow. Shopify, WooCommerce, full setup, and management — from product upload to checkout flow.`
   },
   {
-    icon: TrendingUpIcon,
-    title: "Growth Marketing",
-    description: "Data-driven marketing strategies designed to scale your e-commerce business and increase ROI.",
+    icon: Users,
+    title: "Social Media Management",
+    description: "We manage, plan, and grow your brand presence across social platforms. Strategy, tone, content — all built to connect, not just post.",
   },
 ]
 
@@ -84,22 +96,24 @@ export function ServicesSection() {
           {services.map((service, index) => (
             <Card
               key={index}
-              className="animate-card opacity-0 glass-effect border-primary/10 hover:border-primary/30 hover:shadow-xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 group"
+              className="animate-card glass-effect border-primary/10 hover:border-primary/30 hover:shadow-xl hover:scale-105 hover:-translate-y-2 transition-all duration-300 group h-[390px] flex flex-col"
             >
-              <CardHeader>
-                <div className="group-hover:animate-bounce">
-                  <service.icon />
+              <CardHeader className="text-center pb-4">
+                <div className="mb-4 flex justify-center">
+                  <div className="w-16 h-16 flex items-center justify-center text-primary group-hover:scale-110 transition-transform duration-300">
+                    <service.icon className="w-12 h-12" />
+                  </div>
                 </div>
                 <CardTitle className="text-xl group-hover:text-primary transition-colors duration-300">
                   {service.title}
                 </CardTitle>
               </CardHeader>
-              <CardContent>
-                <p className="text-muted-foreground mb-4 text-pretty">{service.description}</p>
+              <CardContent className="text-center flex-1 flex flex-col justify-between">
+                <p className="text-muted-foreground mb-6 text-sm leading-relaxed">{service.description}</p>
                 <Button
                   variant="outline"
                   size="sm"
-                  className="w-full border-primary/30 text-primary hover:bg-primary hover:text-white hover:border-primary hover:scale-105 transition-all duration-300 bg-transparent"
+                  className="w-full bg-[#22c55e] text-white hover:bg-[#16a34a] transition-all duration-300"
                 >
                   Learn More
                 </Button>

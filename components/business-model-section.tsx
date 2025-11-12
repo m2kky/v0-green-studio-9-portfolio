@@ -7,20 +7,20 @@ import { Calendar, Briefcase, Shuffle, Store, Palette, Camera, Mic, Bot } from "
 const businessModels = [
   {
     icon: Calendar,
-    title: "Monthly Subscriptions",
-    description: "For regular content production and ongoing marketing support.",
+    title: "MONTHLY CONTRACT",
+    description: `For regular content production.`,
     percentage: "40%",
   },
   {
     icon: Briefcase,
-    title: "One-Off Projects",
-    description: "Branding, photography, research, and strategic consulting.",
+    title: `ONE-OFF PROJECTS`,
+    description: `Branding, photography, research.`,
     percentage: "40%",
   },
   {
     icon: Shuffle,
-    title: "Flexible Mix",
-    description: "From project-based to subscription models based on client needs.",
+    title: "FLEXIBLE MIX",
+    description: `From project-based to subscription.`,
     percentage: "20%",
   },
 ]
