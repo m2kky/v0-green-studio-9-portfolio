@@ -1,22 +1,25 @@
 "use client"
 
-import { useEffect, useRef } from "react"
+import React, { useEffect, useRef } from "react"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Camera, Search, Bot, Monitor, ShoppingCart, Users } from "lucide-react"
+import Link from "next/link"
 
 const services = [
   {
+    id: "media-production",
     icon: Camera,
     title: "Media Production",
     description:
       `From cinematic videos to scroll-stopping
-  visuals — we produce content that doesn’t
+  visuals — we produce content that doesn't
   just look good, it sells.
   Photography | Videography | Motion
   Graphics | Creative Direction`,
   },
   {
+    id: "media-buying",
     icon: Search,
     title: "Media Buying",
     description:
@@ -27,6 +30,7 @@ const services = [
   impressions.`,
   },
   {
+    id: "automation",
     icon: Bot,
     title: "Automation",
     description: `We connect tools, build workflows, and
@@ -36,16 +40,19 @@ const services = [
   make everything talk to everything.`,
   },
   {
+    id: "web-development",
     icon: Monitor,
     title: "Web Development & Design",
     description: `We create websites that look stunning and convert visitors into buyers. Fast, modern, and optimized for performance.`,
   },
   {
+    id: "ecommerce-stores",
     icon: ShoppingCart,
     title: "E-commerce Stores",
     description: ` We build and scale online stores for brands ready to grow. Shopify, WooCommerce, full setup, and management — from product upload to checkout flow.`
   },
   {
+    id: "social-media-management",
     icon: Users,
     title: "Social Media Management",
     description: "We manage, plan, and grow your brand presence across social platforms. Strategy, tone, content — all built to connect, not just post.",
@@ -110,13 +117,18 @@ export function ServicesSection() {
               </CardHeader>
               <CardContent className="text-center flex-1 flex flex-col justify-between">
                 <p className="text-muted-foreground mb-6 text-sm leading-relaxed">{service.description}</p>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="w-full bg-[#22c55e] text-white hover:bg-[#16a34a] transition-all duration-300"
-                >
-                  Learn More
-                </Button>
+                <Link href={`/services/${service.id}`} target="_blank">
+                  <Button
+                    variant="outline"
+                    size="sm"
+                    className="w-full bg-gradient-to-r from-green-500 to-green-600 text-white border-0 hover:from-green-600 hover:to-green-700 hover:shadow-lg hover:scale-105 transition-all duration-300 font-semibold group cursor-pointer"
+                  >
+                    <span className="flex items-center justify-between w-full">
+                      Learn More
+                      <service.icon className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
+                    </span>
+                  </Button>
+                </Link>
               </CardContent>
             </Card>
           ))}

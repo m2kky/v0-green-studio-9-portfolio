@@ -1,0 +1,343 @@
+{
+  "company": {
+    "name": "Green Studio 9",
+    "tagline": "We are a creative & performance-driven studio helping brands grow through powerful content, smart ads, and seamless automation.",
+    "description": "From cinematic visuals to fully automated workflows - we bridge creativity and strategy to make marketing actually work."
+  },
+  "services": [
+    {
+      "id": "media-production",
+      "name": "Media Production",
+      "category": "Creative Services",
+      "description": "We produce cinematic visuals and branded content that doesn't just look good – it performs. From concept to post-production, our creative team handles every stage with precision and storytelling that converts attention into engagement.",
+      "whatIncluded": [
+        "Creative direction and concept development",
+        "Video production (shooting, lighting, sound)",
+        "Video editing and color grading",
+        "Motion graphics and animation",
+        "Product, lifestyle, and corporate photography"
+      ],
+      "whyItMatters": "Visuals are your first impression - and we make sure it's unforgettable. We don't shoot content for likes; we shoot content that drives results."
+    },
+    {
+      "id": "photography",
+      "name": "Photography",
+      "category": "Creative Services",
+      "description": "We shoot professional visuals that tell your story through light, color, and emotion - whether it's products, people, or events.",
+      "whatIncluded": [
+        "Product photography (studio & lifestyle)",
+        "Portrait and branding sessions",
+        "Event coverage and behind-the-scenes",
+        "Editing, retouching, and color correction"
+      ],
+      "whyItMatters": "A single image can define how your audience perceives your brand. We make every shot count.",
+      "pricing": {
+        "products": {
+          "price": 135,
+          "unit": "per image",
+          "currency": "EGP"
+        },
+        "people": {
+          "price": 80,
+          "unit": "per image",
+          "currency": "EGP"
+        }
+      }
+    },
+    {
+      "id": "reels-production",
+      "name": "Reels Production",
+      "category": "Creative Services",
+      "description": "Complete reel production packages for social media.",
+      "pricing": {
+        "basic": {
+          "name": "Basic Package",
+          "description": "photos + intro + 1 promo (1 min)",
+          "shootingOnly": 5000,
+          "shootingEditing": 6500,
+          "currency": "EGP"
+        }
+      }
+    },
+    {
+      "id": "video-editing",
+      "name": "Video Editing",
+      "category": "Creative Services",
+      "description": "We turn raw footage into scroll-stopping, polished videos ready for any platform. Each edit is tailored to your brand's tone and objectives.",
+      "whatIncluded": [
+        "Editing, color grading, and sound design",
+        "Motion graphics and transitions",
+        "Subtitles and branding integration",
+        "Formats optimized for each platform (Reels, YouTube, Ads, etc.)"
+      ],
+      "whyItMatters": "Editing isn't just cutting clips - it's crafting a rhythm that keeps viewers watching till the end.",
+      "pricing": {
+        "normal": {
+          "price": 700,
+          "unit": "per minute",
+          "currency": "EGP"
+        },
+        "advanced": {
+          "price": 1200,
+          "unit": "per minute",
+          "currency": "EGP"
+        },
+        "pro": {
+          "price": 1600,
+          "unit": "per minute",
+          "currency": "EGP"
+        }
+      }
+    },
+    {
+      "id": "media-buying",
+      "name": "Media Buying",
+      "category": "Performance Marketing",
+      "description": "We plan, execute, and optimize paid ad campaigns that actually deliver ROI – not just vanity metrics. Our team runs data-driven campaigns across Meta, Google, and TikTok, testing every variable to ensure you get the most out of your ad spend.",
+      "whatIncluded": [
+        "Full campaign setup and audience research",
+        "Creative strategy and ad copy",
+        "A/B testing and optimization",
+        "Daily performance tracking and reporting",
+        "Multi-platform scaling (Meta, Google, TikTok, LinkedIn)"
+      ],
+      "whyItMatters": "Because impressions don't pay the bills - conversions do. We focus on results that you can measure in sales, leads, and growth.",
+      "pricing": {
+        "model": "Custom - based on campaign goals and monthly ad spend",
+        "note": "We charge a % management fee or a fixed retainer depending on your budget"
+      }
+    },
+    {
+      "id": "automation",
+      "name": "Automation",
+      "category": "Business Automation",
+      "description": "We connect your tools, build custom workflows, and automate repetitive tasks so your business runs smoothly - 24/7. Think Zapier, CRMs, bots, and full integration between platforms.",
+      "whatIncluded": [
+        "Workflow mapping and optimization",
+        "CRM and marketing automation setup",
+        "Zapier / Make / Pabbly integrations",
+        "Custom bots for chat, email, and data handling",
+        "Analytics dashboards and reporting"
+      ],
+      "whyItMatters": "Smart automation saves time, reduces human error, and lets your team focus on growth instead of manual work."
+    },
+    {
+      "id": "enterprise-automation",
+      "name": "Automation for Enterprises",
+      "category": "Business Automation",
+      "description": "We design enterprise-level automation systems that integrate marketing, sales, and operations into one seamless ecosystem.",
+      "whatIncluded": [
+        "Advanced CRM automation (HubSpot, Pipedrive, etc.)",
+        "AI-based workflows and predictive analytics",
+        "API integrations and data syncs",
+        "Custom dashboard development"
+      ],
+      "whyItMatters": "Scalable automation gives enterprises the flexibility to move fast, adapt quickly, and operate efficiently.",
+      "pricing": {
+        "model": "Custom - contact us for enterprise automation solutions"
+      }
+    },
+    {
+      "id": "web-development",
+      "name": "Web Development & Design",
+      "category": "Digital Solutions",
+      "description": "We create fast, modern, and conversion-optimized websites that turn visitors into loyal customers. Every website we build is a perfect blend of design, performance, and strategy.",
+      "whatIncluded": [
+        "UX/UI design and brand alignment",
+        "Responsive web development (desktop & mobile)",
+        "SEO and page-speed optimization",
+        "Landing page design for campaigns",
+        "Integration with CRMs, e-commerce, and analytics tools"
+      ],
+      "whyItMatters": "Your website is your digital storefront - we make sure it's open, attractive, and built to convert.",
+      "pricing": {
+        "startingPrice": 10000,
+        "currency": "EGP",
+        "note": "Depends on project scope"
+      }
+    },
+    {
+      "id": "ecommerce-stores",
+      "name": "E-commerce Stores",
+      "category": "Digital Solutions",
+      "description": "We build and scale e-commerce stores ready to sell from day one. Whether it's Shopify, WooCommerce, or custom setups, we handle everything from product uploads to checkout optimization.",
+      "whatIncluded": [
+        "Full store setup (Shopify / WooCommerce)",
+        "Product upload and inventory setup",
+        "Payment gateway integration",
+        "UI customization and branding",
+        "Conversion rate optimization (CRO)"
+      ],
+      "whyItMatters": "An e-commerce site should do more than look good – it should make buying effortless and build trust instantly.",
+      "pricing": {
+        "startingPrice": 12000,
+        "currency": "EGP",
+        "note": "Includes setup + initial optimization"
+      }
+    },
+    {
+      "id": "social-media-management",
+      "name": "Social Media Management",
+      "category": "Digital Solutions",
+      "description": "We manage, plan, and grow your brand presence across social media platforms. From strategy to content creation, we build communities that engage and convert.",
+      "whatIncluded": [
+        "Social media strategy and planning",
+        "Monthly content calendars",
+        "Copywriting, visuals, and video posts",
+        "Engagement and community management",
+        "Monthly analytics and performance reports"
+      ],
+      "whyItMatters": "Social media is more than just posting - it's storytelling, consistency, and brand experience. We make your brand impossible to ignore.",
+      "pricing": {
+        "startingPrice": 4500,
+        "currency": "EGP",
+        "period": "per month",
+        "note": "Depending on number of platforms and posting frequency"
+      }
+    },
+    {
+      "id": "product-video-production",
+      "name": "Product-Focused Video Production Package",
+      "category": "Creative Services",
+      "description": "A complete content production package designed for brands that want professional, high-converting product videos — without needing to appear on camera. We handle everything from creative ideas to shooting, scriptwriting, editing, and delivering ad-ready content.",
+      "tagline": "You don't have to appear on camera to sell. Your product will do the talking — and we'll handle the storytelling, shooting, and editing.",
+      "whatIncluded": [
+        "Creative Concept & Scriptwriting",
+        "Full Video Production",
+        "Talent / Presenter (if needed)",
+        "Editing & Post-Production",
+        "Ad-Optimized Formats"
+      ],
+      "pricing": {
+        "basic": {
+          "name": "Basic",
+          "price": 7000,
+          "currency": "EGP",
+          "description": "Perfect for small products + simple shoots",
+          "includes": [
+            "Scriptwriting",
+            "Shooting",
+            "Light product styling",
+            "2 videos (40–60s)"
+          ]
+        },
+        "standard": {
+          "name": "Standard",
+          "price": 3500,
+          "currency": "EGP",
+          "description": "Ideal for ads + social media content",
+          "includes": [
+            "Scriptwriting",
+            "Shooting",
+            "Basic motion graphics",
+            "Editing",
+            "5 videos (40–60s)"
+          ]
+        },
+        "premium": {
+          "name": "Premium",
+          "price": 12500,
+          "currency": "EGP",
+          "description": "For brands looking for cinematic, ad-ready hero content",
+          "includes": [
+            "Scriptwriting",
+            "Shooting",
+            "Editing",
+            "8 videos (40–60s)",
+            "1 promo 1m"
+          ]
+        }
+      }
+    },
+    {
+      "id": "script-writing",
+      "name": "Script Writing",
+      "category": "Creative Services",
+      "description": "We craft engaging scripts that deliver your message clearly and emotionally. Whether it's ads, reels, or podcasts - we make your words sell.",
+      "whatIncluded": [
+        "Concept development",
+        "Copywriting for short- and long-form video",
+        "Hooks and CTA optimization",
+        "Storyboarding support"
+      ],
+      "whyItMatters": "A strong script is the foundation of every successful video. It's not just what you say – it's how you make people feel.",
+      "pricing": {
+        "starting": 700,
+        "currency": "EGP"
+      }
+    },
+    {
+      "id": "event-coverage",
+      "name": "Event Coverage",
+      "category": "Creative Services",
+      "description": "We capture your events with cinematic storytelling - blending photography and video to highlight every moment that matters.",
+      "whatIncluded": [
+        "Full event photo & video coverage",
+        "Highlight reels, promos, and intros",
+        "Multi-camera production setup",
+        "Quick delivery and post-production"
+      ],
+      "whyItMatters": "Events come and go - but the right coverage keeps their impact alive long after the lights go off.",
+      "pricing": {
+        "twoCamera": {
+          "name": "2 Cameras Setup",
+          "duration": "5 hours",
+          "shootingEditing": 1100,
+          "shootingEditingPrep": 2150,
+          "shootingEditingPrepReels": 2700,
+          "shootingEditingPrepReelsIntro": 3200,
+          "currency": "EGP"
+        },
+        "threeCamera": {
+          "name": "3 Cameras Setup",
+          "duration": "5 hours",
+          "shootingEditing": 1300,
+          "shootingEditingPrep": 2400,
+          "shootingEditingPrepReels": 2900,
+          "shootingEditingPrepReelsIntro": 3400,
+          "currency": "EGP"
+        },
+        "hourlyRate": {
+          "name": "Hourly Rate",
+          "twoCamera": 1450,
+          "threeCamera": 1700,
+          "currency": "EGP",
+          "unit": "per hour"
+        }
+      }
+    },
+    {
+      "id": "podcast-production",
+      "name": "Podcast Production",
+      "category": "Creative Services",
+      "description": "Professional podcast production services with multiple camera setups and comprehensive post-production.",
+      "pricing": {
+        "twoCamera": {
+          "name": "2 Cameras Setup",
+          "duration": "5 hours",
+          "shootingEditing": 1100,
+          "shootingEditingPrep": 2150,
+          "shootingEditingPrepReels": 2700,
+          "shootingEditingPrepReelsIntro": 3200,
+          "currency": "EGP"
+        },
+        "threeCamera": {
+          "name": "3 Cameras Setup",
+          "duration": "5 hours",
+          "shootingEditing": 1300,
+          "shootingEditingPrep": 2400,
+          "shootingEditingPrepReels": 2900,
+          "shootingEditingPrepReelsIntro": 3400,
+          "currency": "EGP"
+        },
+        "hourlyRate": {
+          "name": "Hourly Rate",
+          "twoCamera": 1450,
+          "threeCamera": 1700,
+          "currency": "EGP",
+          "unit": "per hour"
+        }
+      }
+    }
+  ]
+}

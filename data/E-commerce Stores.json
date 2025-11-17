@@ -1,0 +1,22 @@
+{
+  "services": [
+    {
+      "id": "ecommerce-stores",
+      "name": "E-commerce Stores",
+      "description": "We build and scale e-commerce stores ready to sell from day one. Whether it's Shopify, WooCommerce, or custom setups, we handle everything from product uploads to checkout optimization.",
+      "whatIncluded": [
+        "Full store setup (Shopify / WooCommerce)",
+        "Product upload and inventory setup",
+        "Payment gateway integration",
+        "UI customization and branding",
+        "Conversion rate optimization (CRO)"
+      ],
+      "whyItMatters": "An e-commerce site should do more than look good – it should make buying effortless and build trust instantly.",
+      "pricing": {
+        "startingPrice": 12000,
+        "currency": "EGP",
+        "note": "Includes setup + initial optimization"
+      }
+    }
+  ]
+}

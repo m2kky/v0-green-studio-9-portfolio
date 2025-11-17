@@ -1,0 +1,32 @@
+{
+  "services": [
+    {
+      "id": "automation",
+      "name": "Automation",
+      "description": "We connect your tools, build custom workflows, and automate repetitive tasks so your business runs smoothly - 24/7. Think Zapier, CRMs, bots, and full integration between platforms.",
+      "whatIncluded": [
+        "Workflow mapping and optimization",
+        "CRM and marketing automation setup",
+        "Zapier / Make / Pabbly integrations",
+        "Custom bots for chat, email, and data handling",
+        "Analytics dashboards and reporting"
+      ],
+      "whyItMatters": "Smart automation saves time, reduces human error, and lets your team focus on growth instead of manual work."
+    },
+    {
+      "id": "enterprise-automation",
+      "name": "Automation for Enterprises",
+      "description": "We design enterprise-level automation systems that integrate marketing, sales, and operations into one seamless ecosystem.",
+      "whatIncluded": [
+        "Advanced CRM automation (HubSpot, Pipedrive, etc.)",
+        "AI-based workflows and predictive analytics",
+        "API integrations and data syncs",
+        "Custom dashboard development"
+      ],
+      "whyItMatters": "Scalable automation gives enterprises the flexibility to move fast, adapt quickly, and operate efficiently.",
+      "pricing": {
+        "custom": "Contact us for enterprise automation solutions"
+      }
+    }
+  ]
+}

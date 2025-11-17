@@ -1,0 +1,38 @@
+{
+  "services": [
+    {
+      "id": "media-buying",
+      "name": "Media Buying",
+      "description": "We plan, execute, and optimize paid ad campaigns that actually deliver ROI – not just vanity metrics. Our team runs data-driven campaigns across Meta, Google, and TikTok, testing every variable to ensure you get the most out of your ad spend.",
+      "whatIncluded": [
+        "Full campaign setup and audience research",
+        "Creative strategy and ad copy",
+        "A/B testing and optimization",
+        "Daily performance tracking and reporting",
+        "Multi-platform scaling (Meta, Google, TikTok, LinkedIn)"
+      ],
+      "whyItMatters": "Because impressions don't pay the bills - conversions do. We focus on results that you can measure in sales, leads, and growth.",
+      "pricing": {
+        "normal": {
+          "name": "Normal",
+          "price": 700,
+          "currency": "EGP"
+        },
+        "advanced": {
+          "name": "Advanced",
+          "price": 1200,
+          "currency": "EGP"
+        },
+        "pro": {
+          "name": "Pro",
+          "price": 1600,
+          "currency": "EGP"
+        },
+        "custom": {
+          "description": "Based on campaign goals and monthly ad spend",
+          "model": "Percentage management fee or fixed retainer depending on budget"
+        }
+      }
+    }
+  ]
+}

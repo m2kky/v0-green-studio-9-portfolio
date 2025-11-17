@@ -1,0 +1,23 @@
+{
+  "services": [
+    {
+      "id": "social-media-management",
+      "name": "Social Media Management",
+      "description": "We manage, plan, and grow your brand presence across social media platforms. From strategy to content creation, we build communities that engage and convert.",
+      "whatIncluded": [
+        "Social media strategy and planning",
+        "Monthly content calendars",
+        "Copywriting, visuals, and video posts",
+        "Engagement and community management",
+        "Monthly analytics and performance reports"
+      ],
+      "whyItMatters": "Social media is more than just posting - it's storytelling, consistency, and brand experience. We make your brand impossible to ignore.",
+      "pricing": {
+        "startingPrice": 4500,
+        "currency": "EGP",
+        "period": "per month",
+        "note": "Depending on number of platforms and posting frequency"
+      }
+    }
+  ]
+}

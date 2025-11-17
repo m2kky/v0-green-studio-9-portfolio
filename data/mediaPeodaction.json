@@ -1,0 +1,214 @@
+{
+  "services": [
+    {
+      "id": "media-production",
+      "name": "Media Production",
+      "description": "We produce cinematic visuals and branded content that doesn't just look good – it performs.",
+      "whatIncluded": [
+        "Creative direction and concept development",
+        "Video production (shooting, lighting, sound)",
+        "Video editing and color grading",
+        "Motion graphics and animation",
+        "Product, lifestyle, and corporate photography"
+      ],
+      "whyItMatters": "Visuals are your first impression - and we make sure it's unforgettable. We don't shoot content for likes; we shoot content that drives results."
+    },
+    {
+      "id": "photography",
+      "name": "Photography",
+      "description": "We shoot professional visuals that tell your story through light, color, and emotion - whether it's products, people, or events.",
+      "whatIncluded": [
+        "Product photography (studio & lifestyle)",
+        "Portrait and branding sessions",
+        "Event coverage and behind-the-scenes",
+        "Editing, retouching, and color correction"
+      ],
+      "whyItMatters": "A single image can define how your audience perceives your brand. We make every shot count.",
+      "pricing": {
+        "products": {
+          "unit": "per image",
+          "price": 135,
+          "currency": "EGP"
+        },
+        "people": {
+          "unit": "per image",
+          "price": 80,
+          "currency": "EGP"
+        }
+      }
+    },
+    {
+      "id": "video-editing",
+      "name": "Video Editing",
+      "description": "We turn raw footage into scroll-stopping, polished videos ready for any platform. Each edit is tailored to your brand's tone and objectives.",
+      "whatIncluded": [
+        "Editing, color grading, and sound design",
+        "Motion graphics and transitions",
+        "Subtitles and branding integration",
+        "Formats optimized for each platform (Reels, YouTube, Ads, etc.)"
+      ],
+      "whyItMatters": "Editing isn't just cutting clips - it's crafting a rhythm that keeps viewers watching till the end.",
+      "pricing": {
+        "normal": {
+          "unit": "per minute",
+          "price": 700,
+          "currency": "EGP"
+        },
+        "advanced": {
+          "unit": "per minute",
+          "price": 1200,
+          "currency": "EGP"
+        },
+        "pro": {
+          "unit": "per minute",
+          "price": 1600,
+          "currency": "EGP"
+        }
+      }
+    },
+    {
+      "id": "reels-production",
+      "name": "Reels Production",
+      "description": "Complete reel production packages for social media.",
+      "pricing": {
+        "basic": {
+          "description": "photos + intro + 1 promo (1 min)",
+          "shootingOnly": 5000,
+          "shootingEditing": 6500,
+          "currency": "EGP"
+        }
+      }
+    },
+    {
+      "id": "event-coverage",
+      "name": "Event Coverage",
+      "description": "We capture your events with cinematic storytelling - blending photography and video to highlight every moment that matters.",
+      "whatIncluded": [
+        "Full event photo & video coverage",
+        "Highlight reels, promos, and intros",
+        "Multi-camera production setup",
+        "Quick delivery and post-production"
+      ],
+      "whyItMatters": "Events come and go - but the right coverage keeps their impact alive long after the lights go off.",
+      "pricing": {
+        "twoCamera": {
+          "shootingEditing": 1100,
+          "shootingEditingPrep": 2150,
+          "shootingEditingPrepReels": 2700,
+          "shootingEditingPrepReelsIntro": 3200,
+          "currency": "EGP",
+          "duration": "5 hours"
+        },
+        "threeCamera": {
+          "shootingEditing": 1300,
+          "shootingEditingPrep": 2400,
+          "shootingEditingPrepReels": 2900,
+          "shootingEditingPrepReelsIntro": 3400,
+          "currency": "EGP",
+          "duration": "5 hours"
+        },
+        "hourlyRate": {
+          "twoCamera": 1450,
+          "threeCamera": 1700,
+          "currency": "EGP"
+        }
+      }
+    },
+    {
+      "id": "script-writing",
+      "name": "Script Writing",
+      "description": "We craft engaging scripts that deliver your message clearly and emotionally. Whether it's ads, reels, or podcasts - we make your words sell.",
+      "whatIncluded": [
+        "Concept development",
+        "Copywriting for short- and long-form video",
+        "Hooks and CTA optimization",
+        "Storyboarding support"
+      ],
+      "whyItMatters": "A strong script is the foundation of every successful video. It's not just what you say – it's how you make people feel.",
+      "pricing": {
+        "starting": 700,
+        "currency": "EGP"
+      }
+    },
+    {
+      "id": "podcast-production",
+      "name": "Podcast Production",
+      "description": "Professional podcast production services with multiple camera setups and comprehensive post-production.",
+      "pricing": {
+        "twoCamera": {
+          "shootingEditing": 1100,
+          "shootingEditingPrep": 2150,
+          "shootingEditingPrepReels": 2700,
+          "shootingEditingPrepReelsIntro": 3200,
+          "currency": "EGP",
+          "duration": "5 hours"
+        },
+        "threeCamera": {
+          "shootingEditing": 1300,
+          "shootingEditingPrep": 2400,
+          "shootingEditingPrepReels": 2900,
+          "shootingEditingPrepReelsIntro": 3400,
+          "currency": "EGP",
+          "duration": "5 hours"
+        },
+        "hourlyRate": {
+          "twoCamera": 1450,
+          "threeCamera": 1700,
+          "currency": "EGP"
+        }
+      }
+    },
+    {
+      "id": "product-video-production",
+      "name": "Product-Focused Video Production Package",
+      "tagline": "You don't have to appear on camera to sell. Your product will do the talking — and we'll handle the storytelling, shooting, and editing.",
+      "whatIncluded": [
+        "Creative Concept & Scriptwriting",
+        "Full Video Production",
+        "Talent / Presenter (if needed)",
+        "Editing & Post-Production",
+        "Ad-Optimized Formats"
+      ],
+      "pricing": {
+        "basic": {
+          "name": "Basic",
+          "price": 7000,
+          "currency": "EGP",
+          "description": "Perfect for small products + simple shoots",
+          "includes": [
+            "Scriptwriting",
+            "Shooting",
+            "Light product styling",
+            "2 videos (40–60s)"
+          ]
+        },
+        "standard": {
+          "name": "Standard",
+          "price": 3500,
+          "currency": "EGP",
+          "description": "Ideal for ads + social media content",
+          "includes": [
+            "Scriptwriting",
+            "Shooting",
+            "Basic motion graphics",
+            "Editing",
+            "5 videos (40–60s)"
+          ]
+        },
+        "premium": {
+          "name": "Premium",
+          "price": 12500,
+          "currency": "EGP",
+          "description": "For brands looking for cinematic, ad-ready hero content",
+          "includes": [
+            "Scriptwriting",
+            "Shooting",
+            "Editing",
+            "8 videos (40–60s)",
+            "1 promo 1m"
+          ]
+        }
+      }
+    }
+  ]
+}

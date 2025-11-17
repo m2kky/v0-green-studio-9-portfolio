@@ -1,0 +1,22 @@
+{
+  "services": [
+    {
+      "id": "web-development",
+      "name": "Web Development & Design",
+      "description": "We create fast, modern, and conversion-optimized websites that turn visitors into loyal customers. Every website we build is a perfect blend of design, performance, and strategy.",
+      "whatIncluded": [
+        "UX/UI design and brand alignment",
+        "Responsive web development (desktop & mobile)",
+        "SEO and page-speed optimization",
+        "Landing page design for campaigns",
+        "Integration with CRMs, e-commerce, and analytics tools"
+      ],
+      "whyItMatters": "Your website is your digital storefront - we make sure it's open, attractive, and built to convert.",
+      "pricing": {
+        "startingPrice": 10000,
+        "currency": "EGP",
+        "note": "Depends on project scope"
+      }
+    }
+  ]
+}
