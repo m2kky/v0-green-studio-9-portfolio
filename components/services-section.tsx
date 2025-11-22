@@ -117,7 +117,7 @@ export function ServicesSection() {
               </CardHeader>
               <CardContent className="text-center flex-1 flex flex-col justify-between">
                 <p className="text-muted-foreground mb-6 text-sm leading-relaxed">{service.description}</p>
-                <Link href={`/services/${service.id}`} target="_blank">
+                <Link href={`/service/${service.id}`}>
                   <Button
                     variant="outline"
                     size="sm"
